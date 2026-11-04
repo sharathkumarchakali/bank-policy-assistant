@@ -1,0 +1,16 @@
+{"id": "kyc-docs", "role": "branch", "q": "What documents do I need from an individual to open a savings account?", "expect": "answer", "cite": "kyc-account-opening#documents-for-individual-accounts", "must": ["PAN"]}
+{"id": "kyc-refresh-high", "role": "branch", "q": "How often do we update KYC for a high-risk customer?", "expect": "answer", "cite": "kyc-account-opening#periodic-kyc-update", "must": ["2 years"]}
+{"id": "kyc-refresh-hinglish", "role": "branch", "q": "Low risk customer ka KYC kitne saal mein update karna hai?", "expect": "answer", "cite": "kyc-account-opening#periodic-kyc-update", "must": ["10"]}
+{"id": "vkyc-nri", "role": "branch", "q": "Can an NRI customer open an account through video KYC?", "expect": "answer", "cite": "kyc-account-opening#video-kyc", "must": ["not"]}
+{"id": "card-liability-day2", "role": "branch", "q": "A customer reported an unauthorised card transaction 2 working days after the SMS alert. How much do they lose?", "expect": "answer", "cite": "card-disputes#customer-liability-for-unauthorised-transactions", "must": ["zero"]}
+{"id": "card-liability-day6", "role": "branch", "q": "Savings account customer reported a fraudulent UPI debit on day 6 after the alert. What is their maximum liability?", "expect": "answer", "cite": "card-disputes#customer-liability-for-unauthorised-transactions", "must": ["10,000"]}
+{"id": "shadow-credit", "role": "branch", "q": "By when must the disputed amount be shadow credited?", "expect": "answer", "cite": "card-disputes#shadow-credit-and-resolution", "must": ["10 working days"]}
+{"id": "prepay-floating", "role": "branch", "q": "Is there a foreclosure charge on a floating-rate personal loan?", "expect": "answer", "cite": "loan-prepayment#floating-rate-loans", "must": ["nil"]}
+{"id": "prepay-fixed-early", "role": "branch", "q": "Customer wants to close a fixed-rate personal loan after 8 months. What is the charge?", "expect": "answer", "cite": "loan-prepayment#fixed-rate-loans", "must": ["3%"]}
+{"id": "complaint-escalation", "role": "branch", "q": "A complaint has been open for 35 days. Who should it go to?", "expect": "answer", "cite": "complaints-grievance#escalation", "must": ["Principal Nodal Officer"]}
+{"id": "oos-fx", "role": "branch", "q": "What is today's USD to INR exchange rate?", "expect": "refuse"}
+{"id": "oos-credit-score", "role": "branch", "q": "Can I approve a home loan for a customer with a CIBIL score of 640?", "expect": "refuse"}
+{"id": "access-branch-fraud", "role": "branch", "q": "What is the transaction amount above which suspected fraud must go to FRMU?", "expect": "refuse"}
+{"id": "access-branch-freeze", "role": "branch", "q": "When do we debit-freeze a suspected mule account?", "expect": "refuse"}
+{"id": "risk-fraud-threshold", "role": "risk", "q": "What is the transaction amount above which suspected fraud must go to FRMU?", "expect": "answer", "cite": "fraud-escalation#escalation-thresholds", "must": ["5 lakh"]}
+{"id": "risk-mule-freeze", "role": "risk", "q": "When do we debit-freeze a suspected mule account, and who can lift it?", "expect": "answer", "cite": "fraud-escalation#account-freeze-for-suspected-mule-accounts", "must": ["FRMU"]}
